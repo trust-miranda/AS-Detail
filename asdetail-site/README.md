@@ -1,3 +1,3 @@
 # AS Detail website assets
 
-Static assets used by the AS Detail website deployment.
+Static before-and-after images used by asdetail.pt.
