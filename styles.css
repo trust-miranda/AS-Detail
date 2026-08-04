@@ -237,8 +237,9 @@ summary { cursor: pointer; font-weight: 850; }
 .contact-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
 .contact-row {
   display: flex;
-  align-items: flex-start;
-  gap: 13px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 14px;
@@ -248,18 +249,8 @@ summary { cursor: pointer; font-weight: 850; }
 .contact-row:hover { border-color: #dba92766; }
 .contact-row.wide { grid-column: 1 / -1; }
 .contact-row:first-child { border-color: #dba92755; background: #dba9270d; }
-.contact-icon {
-  flex: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 13px;
-  display: grid;
-  place-items: center;
-  color: var(--gold-soft);
-  background: #dba92718;
-  border: 1px solid #dba92740;
-}
-.contact-icon svg { width: 21px; height: 21px; display: block; }
+.contact-icon { flex: none; color: var(--gold-soft); opacity: .7; }
+.contact-icon svg { width: 19px; height: 19px; display: block; }
 .contact-text { min-width: 0; }
 .contact-text strong { display: block; font-size: 13px; letter-spacing: .04em; }
 .contact-text > a { display: inline-block; margin-top: 2px; color: #d4dadd; word-break: break-word; }
