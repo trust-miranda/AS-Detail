@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" role="img" aria-label="AS Detail — Lavagem &amp; Detalhe Automóvel">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf0c4"/>
+      <stop offset=".34" stop-color="#e9c65e"/>
+      <stop offset=".5" stop-color="#a97c10"/>
+      <stop offset=".62" stop-color="#e5bf54"/>
+      <stop offset="1" stop-color="#fdf6db"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbeec0"/>
+      <stop offset=".5" stop-color="#c9971d"/>
+      <stop offset="1" stop-color="#f6dd8e"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15191c"/>
+      <stop offset=".55" stop-color="#0a0d0f"/>
+      <stop offset="1" stop-color="#050708"/>
+    </linearGradient>
+    <linearGradient id="goldline" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="700" y2="0">
+      <stop offset="0" stop-color="#f7dc8a" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#f7dc8a" stop-opacity=".95"/>
+      <stop offset=".78" stop-color="#f7dc8a" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#f7dc8a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5fd6ce" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#7fe1d9"/>
+      <stop offset="1" stop-color="#e6faf7"/>
+    </linearGradient>
+    <clipPath id="inside">
+      <path d="M70 108q0-16 16-20C220 62 330 52 440 52s220 10 354 36q16 4 16 20v160q0 12-12 17l-328 81q-30 8-60 0L82 285q-12-5-12-17Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- badge body -->
+  <path d="M70 108q0-16 16-20C220 62 330 52 440 52s220 10 354 36q16 4 16 20v160q0 12-12 17l-328 81q-30 8-60 0L82 285q-12-5-12-17Z" fill="url(#body)"/>
+
+  <!-- car silhouette sweep, clipped to the badge -->
+  <g clip-path="url(#inside)" fill="none" stroke-linecap="round">
+    <path d="M112 156c62-6 112-34 164-48 44-12 90-18 142-18 58 0 108 8 150 24 42 16 78 38 112 64" stroke="url(#gold)" stroke-width="10"/>
+    <path d="M282 132c46-22 94-33 148-33 52 0 98 12 138 36" stroke="url(#gold)" stroke-width="5" opacity=".8"/>
+    <path d="M540 137c44 6 82 21 114 43" stroke="url(#glass)" stroke-width="6"/>
+  </g>
+
+  <!-- badge outline on top -->
+  <path d="M70 108q0-16 16-20C220 62 330 52 440 52s220 10 354 36q16 4 16 20v160q0 12-12 17l-328 81q-30 8-60 0L82 285q-12-5-12-17Z" fill="none" stroke="url(#edge)" stroke-width="7"/>
+
+  <!-- wordmark -->
+  <text x="432" y="256" fill="url(#gold)" font-family="Impact, Haettenschweiler, 'Arial Narrow Bold', 'Segoe UI', sans-serif" font-weight="700" font-size="112" letter-spacing="1" text-anchor="middle"><tspan>AS</tspan><tspan font-size="88" dx="16">DETAIL</tspan></text>
+
+  <!-- sparkle -->
+  <path d="M676 186c3.5 20 8 24.5 28 28-20 3.5-24.5 8-28 28-3.5-20-8-24.5-28-28 20-3.5 24.5-8 28-28Z" fill="#fdf6db"/>
+  <path d="M714 226c2 10 4.5 12.5 14.5 14.5-10 2-12.5 4.5-14.5 14.5-2-10-4.5-12.5-14.5-14.5 10-2 12.5-4.5 14.5-14.5Z" fill="#f6dd8e"/>
+
+  <!-- divider -->
+  <path d="M180 278h248M452 278h248" stroke="url(#goldline)" stroke-width="4"/>
+  <path d="M440 267l11 11-11 11-11-11Z" fill="#f6dd8e"/>
+
+  <!-- tagline -->
+  <text x="440" y="311" fill="#8fe6df" font-family="'Segoe UI', Inter, system-ui, sans-serif" font-size="20" font-weight="600" letter-spacing="2.8" text-anchor="middle">LAVAGEM &amp; DETALHE AUTOMÓVEL</text>
+</svg>

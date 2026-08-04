@@ -42,11 +42,13 @@ if (location.hash === '#estofagem') {
 }
 
 const form = document.getElementById('waForm');
+const formNote = document.getElementById('formNote');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const name = document.getElementById('nome').value.trim();
+  const phone = document.getElementById('telefone').value.trim();
   const vehicle = document.getElementById('carro').value.trim();
   const service = document.getElementById('servico').value;
   const notes = document.getElementById('msg').value.trim();
@@ -54,12 +56,25 @@ form.addEventListener('submit', (event) => {
   const message = [
     `Olá! Chamo-me ${name}.`,
     `Gostaria de pedir informação ou marcar o serviço ${service} para a viatura ${vehicle}.`,
+    `O meu contacto é ${phone}.`,
     notes ? `Informação adicional: ${notes}` : ''
   ].filter(Boolean).join(' ');
 
-  window.open(
-    `https://wa.me/351935023925?text=${encodeURIComponent(message)}`,
-    '_blank',
-    'noopener'
-  );
+  const url = `https://wa.me/351935023925?text=${encodeURIComponent(message)}`;
+  const tab = window.open(url, '_blank', 'noopener');
+
+  // Without WhatsApp installed the popup may never open, so always leave the
+  // visitor a way to finish the contact by email.
+  if (tab) {
+    formNote.classList.remove('is-error');
+    formNote.textContent = 'Abrimos o WhatsApp com o pedido já escrito — só tens de carregar em enviar.';
+    return;
+  }
+
+  const mail = `mailto:contacto@asdetail.pt?subject=${encodeURIComponent('Pedido de marcação — ' + service)}&body=${encodeURIComponent(message)}`;
+  formNote.classList.add('is-error');
+  formNote.innerHTML =
+    'Não conseguimos abrir o WhatsApp. ' +
+    `<a href="${url}" target="_blank" rel="noopener">Abrir o WhatsApp manualmente</a> ` +
+    `ou <a href="${mail}">enviar por email</a>.`;
 });
