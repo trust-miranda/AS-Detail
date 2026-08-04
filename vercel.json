@@ -2,8 +2,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/ig", "destination": "/index.html" },
-    { "source": "/tiktok", "destination": "/index.html" }
+    { "source": "/ig", "destination": "/" },
+    { "source": "/tiktok", "destination": "/" }
   ],
   "headers": [
     {
