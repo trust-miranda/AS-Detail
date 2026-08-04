@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AS Detail — lavagem e detalhe automóvel premium. Serviços de interior e exterior com produtos profissionais.">
-  <title>AS Detail | Lavagem & Detalhe Automóvel</title>
+  <meta name="description" content="AS Detail — lavagem e detalhe automóvel premium, estofagem e reparação de bancos, volantes, tetos, pilares e portas.">
+  <title>AS Detail | Detalhe Automóvel & Estofagem</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
       </a>
       <div class="links">
         <a class="mobile-services" href="#servicos">Serviços</a>
+        <a href="#estofagem">Estofagem</a>
         <a href="#resultados">Resultados</a>
         <a href="#faq">FAQ</a>
         <a class="btn primary" href="https://wa.me/351935023925?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20ou%20marcar%20um%20servi%C3%A7o." target="_blank" rel="noopener">Marcar</a>
@@ -32,7 +33,7 @@
         <div>
           <div class="eyebrow">Lavagem premium · detalhe automóvel</div>
           <h1>O teu carro merece <span>mais cuidado.</span></h1>
-          <p class="lead">Limpeza manual, produtos profissionais e atenção real aos detalhes. Escolhe o serviço certo para recuperar o aspeto, o conforto e a proteção da tua viatura.</p>
+          <p class="lead">Limpeza manual, produtos profissionais e atenção real aos detalhes. Da lavagem premium à estofagem e reparação de bancos, volantes e tetos — tudo para recuperar o aspeto, o conforto e a proteção da tua viatura.</p>
           <div class="actions">
             <a class="btn primary" href="https://wa.me/351935023925?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20ou%20marcar%20um%20servi%C3%A7o." target="_blank" rel="noopener">Pedir marcação no WhatsApp</a>
             <a class="btn secondary" href="#servicos">Ver serviços e preços</a>
@@ -40,6 +41,7 @@
           <div class="facts">
             <span class="fact">Serviços desde 25 €</span>
             <span class="fact">Interior e exterior</span>
+            <span class="fact">Estofagem e reparação</span>
             <span class="fact">Produtos profissionais</span>
           </div>
         </div>
@@ -62,9 +64,15 @@
     <section class="alt" id="servicos">
       <div class="wrap">
         <div class="eyebrow">Serviços</div>
-        <h2>Escolhe o nível de detalhe certo.</h2>
-        <p class="desc">Os preços apresentados são valores base e podem ser ajustados consoante o tamanho, estado e necessidades específicas da viatura.</p>
+        <h2>Escolhe o serviço certo para a tua viatura.</h2>
+        <p class="desc">Duas áreas de trabalho: lavagem e detalhe completo, ou estofagem e reparação de interiores. Os preços apresentados são valores base e podem ser ajustados consoante o tamanho, estado e necessidades específicas da viatura.</p>
 
+        <div class="tabs" role="tablist" aria-label="Categorias de serviços">
+          <button type="button" class="tab is-active" role="tab" id="tab-detalhe" aria-controls="panel-detalhe" aria-selected="true">Lavagem &amp; Detalhe</button>
+          <button type="button" class="tab" role="tab" id="tab-estofagem" aria-controls="panel-estofagem" aria-selected="false" tabindex="-1">Estofagem &amp; Reparação</button>
+        </div>
+
+        <div class="panel" id="panel-detalhe" role="tabpanel" aria-labelledby="tab-detalhe">
         <div class="service-grid">
           <article class="card">
             <div class="card-head"><div><h3>Essencial</h3></div><div class="price">25 €</div></div>
@@ -119,13 +127,60 @@
           <span><strong>Nota:</strong> os valores podem variar consoante o estado e as características da viatura.</span>
           <span><strong>Excesso de pelos:</strong> +10 €</span>
         </div>
+        </div>
+
+        <div class="panel" id="panel-estofagem" role="tabpanel" aria-labelledby="tab-estofagem" hidden>
+          <div class="panel-intro" id="estofagem">
+            <h3>Estofagem e reparação de interiores</h3>
+            <p>Recuperamos peças gastas, rasgadas, descoladas ou manchadas — com acabamento à medida da viatura. Trabalhamos bancos, volantes, tetos, pilares e portas.</p>
+            <div class="chips">
+              <span class="chip">Bancos</span>
+              <span class="chip">Volantes</span>
+              <span class="chip">Tetos</span>
+              <span class="chip">Pilares</span>
+              <span class="chip">Portas</span>
+            </div>
+          </div>
+
+          <ul class="pricelist">
+            <li class="price-row">
+              <div class="price-info"><h4>Teto — carro</h4><p>Reparação ou substituição do céu do tejadilho descolado, manchado ou danificado.</p></div>
+              <div class="price-value">120 €</div>
+            </li>
+            <li class="price-row">
+              <div class="price-info"><h4>Teto — carrinha</h4><p>Mesmo trabalho em viaturas de maior dimensão, com mais área e tempo de execução.</p></div>
+              <div class="price-value">140 €</div>
+            </li>
+            <li class="price-row">
+              <div class="price-info"><h4>Volante</h4><p>Reparação e reestofagem de volantes gastos, brilhantes ou descascados.</p></div>
+              <div class="price-value">110 €</div>
+            </li>
+            <li class="price-row">
+              <div class="price-info"><h4>Pilar</h4><p>Recuperação de pilares interiores danificados ou com revestimento solto.</p></div>
+              <div class="price-value">25 € <span class="unit">/ pilar</span></div>
+            </li>
+            <li class="price-row">
+              <div class="price-info"><h4>Porta</h4><p>Reparação do painel e revestimento interior da porta.</p></div>
+              <div class="price-value">35 € <span class="unit">/ porta</span></div>
+            </li>
+            <li class="price-row quote">
+              <div class="price-info"><h4>Bancos</h4><p>Estofagem e reparação de bancos em tecido ou pele. O valor depende do material, do número de bancos e do estado — envia fotografias para receberes um orçamento.</p></div>
+              <div class="price-value"><span class="quote-value">Sob orçamento</span></div>
+            </li>
+          </ul>
+
+          <div class="notice">
+            <span><strong>Nota:</strong> os valores são base e confirmados após avaliação por fotografia.</span>
+            <a class="btn primary" href="https://wa.me/351935023925?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20de%20estofagem%20e%20repara%C3%A7%C3%A3o." target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="resultados">
       <div class="wrap">
         <div class="eyebrow">Resultados reais</div>
-        <h2>Antes e depois de trabalhos da AS Detail.</h2>
+        <h2>Antes e depois.</h2>
         <p class="desc">Fotografias reais de serviços realizados. O vídeo fica de fora nesta fase para manter o website rápido e totalmente estável.</p>
 
         <div class="gallery">
@@ -173,6 +228,8 @@
           <details><summary>Os preços são sempre fixos?</summary><p class="desc">São valores base. Podem ser ajustados consoante o tamanho, estado e necessidades específicas da viatura, sempre com confirmação prévia.</p></details>
           <details><summary>É necessário marcar previamente?</summary><p class="desc">Sim. A marcação permite reservar o tempo necessário para executar o serviço com o nível de detalhe previsto.</p></details>
           <details><summary>Conseguem tratar um interior muito sujo?</summary><p class="desc">Sim, mediante avaliação. Envia fotografias por WhatsApp para confirmar o serviço e o preço.</p></details>
+          <details><summary>A estofagem inclui o material?</summary><p class="desc">Os valores indicados são a base do trabalho de estofagem e reparação. Materiais específicos ou acabamentos especiais podem alterar o valor, sempre confirmado antes de avançar.</p></details>
+          <details><summary>Quanto custa a estofagem de bancos?</summary><p class="desc">Depende do material (tecido ou pele), do número de bancos e do estado de cada um. Envia fotografias por WhatsApp e recebes um orçamento certo.</p></details>
           <details><summary>O que devo retirar do carro?</summary><p class="desc">Retira objetos pessoais, documentos, bens de valor e artigos soltos.</p></details>
         </div>
       </div>
@@ -198,7 +255,13 @@
             <div class="field full">
               <label for="servico">Serviço</label>
               <select id="servico">
-                <option>Essencial — 25 €</option><option>Detailer Plus — 45 €</option><option>Exterior Detail — 60 €</option><option>Interior Detail — 65 €</option><option>Premium Detail — 95 €</option><option>Premium Detail Plus — 125 €</option><option>Preciso de recomendação</option>
+                <optgroup label="Lavagem &amp; Detalhe">
+                  <option>Essencial — 25 €</option><option>Detailer Plus — 45 €</option><option>Exterior Detail — 60 €</option><option>Interior Detail — 65 €</option><option>Premium Detail — 95 €</option><option>Premium Detail Plus — 125 €</option>
+                </optgroup>
+                <optgroup label="Estofagem &amp; Reparação">
+                  <option>Teto — carro — 120 €</option><option>Teto — carrinha — 140 €</option><option>Volante — 110 €</option><option>Pilares — 25 € / pilar</option><option>Portas — 35 € / porta</option><option>Bancos — sob orçamento</option>
+                </optgroup>
+                <option>Preciso de recomendação</option>
               </select>
             </div>
             <div class="field full"><label for="msg">Informação adicional</label><textarea id="msg" placeholder="Estado da viatura, disponibilidade ou dúvidas"></textarea></div>
