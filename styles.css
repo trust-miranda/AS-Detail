@@ -1,3 +1,15 @@
+/* Inter variable, latin subset only — every Portuguese accented character
+   lives in U+0000-00FF. Variable because the design uses 750/850/950, which
+   static weights would snap to 700/900. SIL OFL, see assets/fonts/OFL.txt */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --bg: #07090b;
   --panel: #101417;
@@ -63,7 +75,7 @@ nav {
   text-transform: uppercase;
 }
 .links { display: flex; align-items: center; gap: 18px; font-size: 14px; font-weight: 750; }
-.mobile-services { display: none; }
+.links a:not(.btn):hover { color: var(--gold-soft); }
 
 .btn {
   display: inline-flex;
@@ -305,8 +317,8 @@ footer { border-top: 1px solid var(--line); padding: 38px 0 46px; color: var(--m
   .hero-art { min-height: 340px; }
   .service-grid, .gallery { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
-  .links a:not(.btn):not(.mobile-services) { display: none; }
-  .mobile-services { display: inline-flex; color: var(--gold-soft); font-weight: 900; }
+  .links a:not(.btn):not(.nav-services) { display: none; }
+  .nav-services { color: var(--gold-soft); font-weight: 900; }
   .brandtext span { display: none; }
   .wa-float { display: inline-flex; }
   footer { padding-bottom: 96px; }
@@ -317,7 +329,7 @@ footer { border-top: 1px solid var(--line); padding: 38px 0 46px; color: var(--m
   .brandmark { width: 44px; height: 44px; font-size: 16px; }
   .brandtext strong { font-size: 16px; }
   .links { gap: 8px; }
-  .links .btn, .mobile-services { padding: 9px 10px; font-size: 11px; }
+  .links .btn, .nav-services { padding: 9px 10px; font-size: 11px; }
   .hero { padding: 58px 0; }
   .hero h1 { font-size: 49px; }
   .hero-art { min-height: 285px; }
